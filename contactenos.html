@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Metas Requeridos-->
+  <meta charset="UTF-8">
+  <meta name="description" content="Página Contacto- Panadería" />
+  <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript" />
+  <meta name="author" content="Melina Corrales" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Panadería y Cafetería La Trinidad</title>
+
+  <!--Links Requeridos-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!--Links Requeridos-->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="icon" href="imagenes/logo.png" type="image/png" />
+  <script src = "https://smtpjs.com/v3/smtp.js"> </script>  
+
+
+</head>
+
+<body>
+
+  <header class="container">
+    <img src="imagenes/bg-header-p.jpg" alt="Pan" style="width:100%; height:auto;">
+    
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="conocenos.html">Conócenos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Productos
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="baguettes.html">Baguettes</a>
+              <a class="dropdown-item" href="dulce.html">Pan Dulce</a>
+              <a class="dropdown-item" href="salado.html">Pan Salado</a>
+              <a class="dropdown-item" href="otros.html">Otros</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ubicacion.html">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactenos.html">Contáctenos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <div class="container">
+
+    <div class="container main-content">
+
+      <div class="container contact-form" >
+        <h3  style="padding-bottom: 0px;">Contáctanos</h3>
+        <hr style="margin-top: 0px;">
+      
+        <div class="row">        
+
+            <div class="col-md-6" id="info">
+
+              <p><strong>Correo electrónico</strong>
+                <br><i class="fa fa-envelope"></i>
+                panaderiaycafeterialatrinidad@gmail.com | <a href="https://www.facebook.com/Panader%C3%ADa-y-Cafeter%C3%ADa-La-Trinidad-821062644745836/" target="_blank"><i
+                    class="fa fa-facebook"></i></a>
+              </p>
+
+              <p> <strong>Teléfono</strong>
+                <br><i class="fa fa-phone"></i>
+                +506 2450 4771 | +506 7110 0386
+              </p>
+              <p> <strong>Dirreción</strong>
+                <br><i class="fa fa-location-arrow"></i>
+                Panadería Trinidad, Naranjo, Candelaria, Costa Rica.
+              <p><strong> Horario de atención</strong>
+                <br>
+                Lunes a Domingo
+                <br>
+                6:00-19:35
+              </p>
+              <br><br><br>
+              <table class="table table-striped table-hover">
+               <h6>Formas de Pago</h6>
+                <tbody>
+                  <tr>
+                    <th scope="row">Tarjeta</th>
+                    <td><i class="fa fa-cc-visa"></i>
+                    <i class="fa fa-cc-mastercard"></i>
+                    <i class="fa fa-cc-discover"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Efectivo</th>
+                    <td><i class="fa fa-money"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sinpe Móvil</th>
+                    <td><img class="sm" src="https://img.icons8.com/material-sharp/24/000000/no-mobile-devices.png"/> 
+                      <img class="sm" src="https://img.icons8.com/material-outlined/24/000000/initiate-money-transfer.png"/>                    
+                     </td>
+                  </tr>
+                </tbody>
+              </table>
+            
+            </div>
+      
+             <div class="col-md-6">
+           
+               <form  method="post" class="form_contact" >
+          
+               <div class="form-group">
+                 <label>Nombre </label>
+                 <input type="text" id="nombre" name="nombre" required class="form-control"  placeholder= "Escriba su nombre">
+               </div>
+           
+               <div class="form-group">
+                 <label>Apellidos </label>
+                 <input type="text" id="apellido" name="apellido" required class="form-control"  placeholder= "Escriba sus apellidos" >
+               </div>
+               <div class="form-group">
+                <p><label>Correo Electrónico</label>
+                  <input id="correo" placeholder= "Escriba su correo electrónico"  required class="form-control"  >
+                  <span id="emailOK"></span>
+                </p> 
+                   </div>  
+           
+           <p><label>Seleccione su género</label>
+            <br>
+            <input type="radio" id="hm" name="hm" value="h" required> Masculino
+            <input type="radio" id="hm" name="hm" value="m" required> Femenino
+            <input type="radio" id="hm" name="hm" value="o" required> Otro
+          </p>
+          
+            <div class="form-group">
+              <label>Fecha de Nacimiento</label>
+              <input type='date' id='miEdad'  name="fecha" required  class="form-control" >
+              <p id= "Edadcalculada">  </p>
+               </div>
+                
+               <div class="form-group">
+                 <label>Mensaje</label>
+                 <textarea  rows="4" id="mensaje" name="mensaje" required class="form-control" placeholder= "Escriba un mensaje"></textarea>
+               </div>
+           
+               <div class="form-group">
+                 <a  id="btn-info" onclick="Edad();" class="btn btn-dark" >Enviar</a>
+               </div>
+          </form>
+             </div>
+          </div>
+        
+      </div>
+           <script src="js/formulaEdad.js" ></script>
+          
+           <script src="js/correo.js"></script>      
+  </div>
+  </div>
+
+  <div class="container">
+    <footer>
+
+      <p> <strong>Panadería y Cafetería La Trinidad - Servicio al Cliente</strong>
+        <br>
+        Teléfono : +506 2450 4771 | Horario : Lunes a Domingo 6:00-19:35
+        <br>
+        <a href="index.html">Inicio</a> | <a href="conocenos.html">Conócenos</a> | <a
+          href="ubicacion.html">Ubicación</a>
+        |
+        <a href="autor.html">Autor</a> | <a href="contactenos.html">Contáctenos</a>
+        <br>
+        Copyright &copy; 2021 | Melina Corrales Delgado
+      </p>
+
+    </footer>
+  </div>
+
+</body>
+
+</html>
